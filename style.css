@@ -1,0 +1,187 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.card {
+  width: 800px;
+  height: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 6px;
+  border-color: #753695;
+  -webkit-box-shadow: 0px 1px 15px 2px rgba(65, 3, 172, 0.16);
+  -moz-box-shadow: 0px 1px 15px 2px rgba(65, 3, 172, 0.16);
+  box-shadow: 0px 1px 15px 2px rgba(65, 3, 172, 0.16);
+  background-image: url(images/pawel-czerwinski-7FqOISWr5V0-unsplash.jpg);
+  filter: brightness(110%);
+}
+.form-all-container {
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.form_container {
+  width: 700px;
+  height: 50px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.form_container input[type="text"] {
+  width: 550px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: #753695;
+}
+.button-search {
+  height: 35px;
+  font-size: 16px;
+  padding: 5px 18px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: #753695;
+  background-color: #753695;
+  color: white;
+  transition: transform 200ms;
+}
+
+.button-search:hover {
+  transform: translateY(-5px);
+}
+
+.fa-icon {
+  position: absolute;
+  top: 48px;
+  width: 38px;
+  height: 38px;
+  margin-left: -45px;
+  transition: transform 200ms;
+  cursor: pointer;
+}
+.fa-icon:hover {
+  transform: translateY(-5px);
+}
+.col {
+  padding-top: 25px;
+  margin-left: 20px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: right;
+  color: #3903fb;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #17061f;
+  text-align: right;
+}
+h2 {
+  color: #17061f;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: right;
+}
+
+.weather-temperature {
+  text-align: center;
+}
+.degrees {
+  font-size: 60px;
+  font-weight: 400;
+  color: #17061f;
+}
+.active {
+  color: #17061f;
+  cursor: default;
+}
+#celsius-link {
+  text-decoration: none;
+}
+.fahrenheit {
+  text-decoration: none;
+}
+.temp-convert {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.today-icon {
+  width: 125px;
+  height: 125px;
+  margin-left: 50px;
+}
+
+.today-data {
+  font-weight: 500;
+  text-align: left;
+  color: #17061f;
+  font-size: 18px;
+  margin-right: -30px;
+  margin-left: -10px;
+}
+
+.today-data-row {
+  padding-bottom: 8px;
+}
+.today-data-font {
+  font-weight: 400;
+}
+.today-data-icons {
+  width: 28px;
+  height: 28px;
+}
+.card-group {
+  position: absolute;
+  margin-left: 39px;
+  margin-top: 355px;
+}
+.card-day-all {
+  width: 120px;
+  height: 200px;
+  transition: 0.6s;
+}
+.card-day-trans {
+  transition: 0.6s;
+}
+.card-day-trans:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+.card-body-line {
+  border-left: 0.5px solid #d5d5d5;
+  height: 130px;
+}
+.card-title {
+  font-weight: 500;
+  text-align: center;
+  color: #3c0b54;
+}
+.card-img-weather {
+  width: 40px;
+  height: 40px;
+  margin-left: 42px;
+}
+.card-text-day {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #17061f;
+}
+.card-text-night {
+  text-align: center;
+  margin-top: -17px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #17061f;
+}
+.by {
+  text-align: center;
+}
