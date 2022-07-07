@@ -2,7 +2,7 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-image: url(images/annie-spratt-pKpipZVVEC0-unsplash\ \(1\).jpg);
 }
 .card {
   width: 800px;
@@ -15,8 +15,8 @@ body {
   -webkit-box-shadow: 0px 1px 15px 2px rgba(65, 3, 172, 0.16);
   -moz-box-shadow: 0px 1px 15px 2px rgba(65, 3, 172, 0.16);
   box-shadow: 0px 1px 15px 2px rgba(65, 3, 172, 0.16);
-  background-image: url(images/pawel-czerwinski-7FqOISWr5V0-unsplash.jpg);
-  filter: brightness(110%);
+  background: #fff5;
+  backdrop-filter: blur(5px);
 }
 .form-all-container {
   display: inline-block;
