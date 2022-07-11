@@ -25,7 +25,12 @@
       <div class="form-all-container">
         <div class="form_container">
           <form id="searchForm">
-            <input type="text" id="city-input" placeholder="Enter a city" />
+            <input
+              type="search"
+              id="city-input"
+              placeholder="Enter a city"
+              autocomplete="off"
+            />
             <button type="submit" class="button-search">Search</button>
           </form>
         </div>
@@ -48,147 +53,64 @@
           <img alt="Today-weather" class="today-icon" id="icon" />
         </div>
         <div class="col">
-          <div class="today-data">
-            <div class="today-data-row">
-              <img
-                src="icons/thermometer.png"
-                alt="feels"
-                class="today-data-icons"
-              />
-              <span>
-                <span class="today-data-font">Feels like: </span>
-                <span id="feels_like"></span>°C
-              </span>
-            </div>
-            <div class="today-data-row">
-              <img
-                src="icons/drop.png"
-                alt="precipitation"
-                class="today-data-icons"
-              />
-              <span>
-                <span class="today-data-font">Humidity: </span>
-                <span id="humidity"></span>%
-              </span>
-            </div>
-            <div class="today-data-row">
-              <img src="icons/wind.png" alt="wind" class="today-data-icons" />
-              <span>
-                <span class="today-data-font">Wind: </span>
-                <span id="wind"></span> km/h
-              </span>
-            </div>
-            <div class="today-data-row">
-              <img
-                src="icons/atmospheric.png"
-                alt="humidity"
-                class="today-data-icons"
-              />
-              <span
-                ><span class="today-data-font">Pressure: </span
-                ><span id="pressure"></span> hPa</span
-              >
-            </div>
+          <div class="today-data-row">
+            <img
+              src="icons/thermometer.png"
+              alt="feels"
+              class="today-data-icons"
+            />
+            <span>
+              <span class="today-data-font">Feels like: </span>
+              <span id="feels_like"></span>°C
+            </span>
+          </div>
+          <div class="today-data-row">
+            <img
+              src="icons/drop.png"
+              alt="precipitation"
+              class="today-data-icons"
+            />
+            <span>
+              <span class="today-data-font">Humidity: </span>
+              <span id="humidity"></span>%
+            </span>
+          </div>
+          <div class="today-data-row">
+            <img src="icons/wind.png" alt="wind" class="today-data-icons" />
+            <span>
+              <span class="today-data-font">Wind: </span>
+              <span id="wind"></span> km/h
+            </span>
+          </div>
+          <div class="today-data-row">
+            <img
+              src="icons/atmospheric.png"
+              alt="humidity"
+              class="today-data-icons"
+            />
+            <span
+              ><span class="today-data-font">Pressure: </span
+              ><span id="pressure"></span> hPa</span
+            >
           </div>
         </div>
       </div>
 
       <div class="weather-temperature">
-        <span id="temperature" class="degrees">0</span>
+        <span id="temperature" class="degrees"></span>
         <span class="temp-convert">
           <a class="active" href="#" id="celsius-link">°C</a> |
           <a class="fahrenheit" href="#" id="fahrenheit-link">°F</a>
         </span>
       </div>
 
-      <div class="card-group">
-        <div class="card-day-all">
-          <div class="card-day-trans">
-            <h5 class="card-title">Sun</h5>
-            <img
-              src="icons/cloud.png"
-              class="card-img-weather"
-              alt="icon-weather"
-            />
-            <p class="card-text-day">23°C</p>
-            <p class="card-text-night">12°C</p>
-          </div>
-        </div>
-        <div class="card-day-all">
-          <div class="card-body-line">
-            <div class="card-day-trans">
-              <h5 class="card-title">Mon</h5>
-              <img
-                src="icons/cloud.png"
-                class="card-img-weather"
-                alt="icon-weather"
-              />
-              <p class="card-text-day">24°C</p>
-              <p class="card-text-night">12°C</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-day-all">
-          <div class="card-body-line">
-            <div class="card-day-trans">
-              <h5 class="card-title">Tue</h5>
-              <img
-                src="icons/cloudy.png"
-                class="card-img-weather"
-                alt="icon-weather"
-              />
-              <p class="card-text-day">22°C</p>
-              <p class="card-text-night">10°C</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-day-all">
-          <div class="card-body-line">
-            <div class="card-day-trans">
-              <h5 class="card-title">Wed</h5>
-              <img
-                src="icons/rain (1).png"
-                class="card-img-weather"
-                alt="icon-weather"
-              />
-              <p class="card-text-day">20°C</p>
-              <p class="card-text-night">10°C</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-day-all">
-          <div class="card-body-line">
-            <div class="card-day-trans">
-              <h5 class="card-title">Thu</h5>
-              <img
-                src="icons/cloud.png"
-                class="card-img-weather"
-                alt="icon-weather"
-              />
-              <p class="card-text-day">22°C</p>
-              <p class="card-text-night">10°C</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-day-all">
-          <div class="card-body-line">
-            <div class="card-day-trans">
-              <h5 class="card-title">Fri</h5>
-              <img
-                src="icons/sun.png"
-                class="card-img-weather"
-                alt="icon-weather"
-              />
-              <p class="card-text-day">25°C</p>
-              <p class="card-text-night">14°C</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="weather-forecast" id="forecast"></div>
     </div>
     <footer class="by">
       <p>
-        <a href="https://github.com/tor-nat-a/warm-cold-app">Open-source code on GitHub</a>, by
+        <a href="https://github.com/tor-nat-a/warm-cold-app"
+          >Open-source code on GitHub</a
+        >, by
         <a href="https://www.instagram.com/_tor_nat_a_/">Nataliia Torhonska</a>
       </p>
     </footer>

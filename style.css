@@ -2,24 +2,27 @@ body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   height: 100%;
-  background-image: url(images/annie-spratt-pKpipZVVEC0-unsplash\ \(1\).jpg);
+  background-image: url(images/alessio-soggetti-LFjxCbhs0QM-unsplash.jpg);
 }
+
 .card {
   width: 800px;
-  height: 540px;
+  height: 550px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 40px;
   border-radius: 6px;
-  border-color: #08298A;
+  border-color: #08298a;
   background: #fff7;
   backdrop-filter: blur(2px);
 }
+
 .form-all-container {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 40px;
 }
+
 .form_container {
   width: 730px;
   height: 50px;
@@ -27,24 +30,26 @@ body {
   padding: 10px;
 }
 
-.form_container input[type="text"] {
+.form_container input[type="search"] {
   width: 550px;
   height: 35px;
   font-size: 16px;
+  outline: none;
   border-radius: 6px;
   border-width: 1px;
-  border-color: #08298A;
-  background-color: #EFFBFB;
+  border-color: #08298a;
+  background-color: #fff;
   text-align: center;
 }
+
 .button-search {
   height: 35px;
   font-size: 16px;
   padding: 5px 18px;
   border-radius: 6px;
   border-width: 1px;
-  border-color: #08298A;
-  background-color: #08298A;
+  border-color: #08298a;
+  background-color: #08298a;
   color: white;
   transition: transform 200ms;
 }
@@ -55,35 +60,46 @@ body {
 
 .fa-icon {
   position: absolute;
-  top: 48px;
+  top: 38px;
   width: 38px;
   height: 38px;
   margin-left: -70px;
   transition: transform 200ms;
   cursor: pointer;
 }
+
 .fa-icon:hover {
   transform: translateY(-5px);
 }
+
 .col {
-  padding-top: 25px;
+  padding-top: 15px;
   margin-left: 20px;
   margin-right: -35px;
+  font-weight: 500;
+  text-align: left;
+  color: #0a0a2a;
+  font-size: 18px;
+  margin-right: -30px;
+  margin-left: -50px;
 }
+
 h1 {
   font-size: 40px;
   font-weight: 500;
   text-align: right;
-  color: #0000FF;
+  color: #0000ff;
 }
+
 h3 {
   font-size: 20px;
   font-weight: 500;
-  color: #0A0A2A;
+  color: #0a0a2a;
   text-align: right;
 }
+
 h2 {
-  color: #0A0A2A;
+  color: #0a0a2a;
   font-weight: 300;
   font-size: 22px;
   text-align: right;
@@ -91,45 +107,43 @@ h2 {
 
 .weather-temperature {
   text-align: center;
+  margin-top: -20px;
 }
+
 .degrees {
   font-size: 60px;
   font-weight: 400;
-  color: #0A0A2A;
+  color: #0a0a2a;
 }
+
 .active {
-  color: #0A0A2A;
+  color: #0a0a2a;
   cursor: default;
 }
+
 #celsius-link {
   text-decoration: none;
 }
+
 .fahrenheit {
   text-decoration: none;
 }
+
 .temp-convert {
   font-size: 20px;
   text-decoration: none;
 }
 
 .today-icon {
-  width: 125px;
-  height: 125px;
-  margin-left: 50px;
-}
-
-.today-data {
-  font-weight: 500;
-  text-align: left;
-  color: #0A0A2A;
-  font-size: 18px;
-  margin-right: -30px;
-  margin-left: -50px;
+  width: 170px;
+  height: 170px;
+  margin-left: 83px;
 }
 
 .today-data-row {
   padding-bottom: 8px;
 }
+
 .today-data-font {
   font-weight: 400;
 }
@@ -137,51 +151,70 @@ h2 {
   width: 28px;
   height: 28px;
 }
-.card-group {
-  position: absolute;
-  margin-left: 39px;
-  margin-top: 355px;
+
+.weather-forecast {
+  margin: 0 auto;
+  margin-top: 10px;
 }
-.card-day-all {
+
+.col-2 {
   width: 120px;
-  height: 200px;
-  transition: 0.6s;
+  height: 170px;
 }
+
 .card-day-trans {
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
   transition: 0.6s;
+  transition: 200ms;
 }
+
 .card-day-trans:hover {
   transform: scale(1.2);
   opacity: 1;
 }
-.card-body-line {
-  border-left: 0.5px solid #fff;
-  height: 130px;
-}
-.card-title {
-  font-weight: 500;
-  text-align: center;
-  color: #08298A;
-}
-.card-img-weather {
-  width: 40px;
-  height: 40px;
-  margin-left: 42px;
-}
-.card-text-day {
-  text-align: center;
-  margin-top: 10px;
-  font-weight: 500;
+
+.weather-forecast-date {
   font-size: 20px;
-  color: #0A0A2A;
-}
-.card-text-night {
+  font-weight: 500;
   text-align: center;
-  margin-top: -17px;
-  font-weight: 400;
-  font-size: 15px;
-  color: #0A0A2A;
+  color: #08298a;
+  margin-top: 10px;
 }
+.icon-now {
+  width: 60px;
+  height: 60px;
+  margin-left: 19px;
+}
+
+.weather-forecast-temperatures-max {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0a0a2a;
+  margin-top: -5px;
+}
+
+.weather-forecast-temperatures-min {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0a0a2a;
+  margin-top: -10px;
+}
+
+.up {
+  width: 20px;
+  height: 20px;
+}
+
+.down {
+  width: 18px;
+  height: 18px;
+}
+
 .by {
   text-align: center;
 }
